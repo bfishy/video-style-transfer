@@ -12,7 +12,7 @@ Code in this repository is built and modeled on methods provided in [A Neural Al
 - In order for the program to successfully save the stylized frames, a folder named `output` needs to be created in the same directory before running the program. 
 
 ## Usage
-To run the program, call `python main.py' with the following tags with their corresponding inputs:
+To run the program, call `python main.py` with the following tags with their corresponding inputs:
 - `-v` or `--video`: filepath of the input video
 - `-s` or `--style_img`: filepath of the style image
 - `-o` or `--output`: the filepath + name of the output file, ending with `.mp4`
