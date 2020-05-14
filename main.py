@@ -19,7 +19,7 @@ def main():
 
     args = parser.parse_args()
 
-    # Parse arguments
+    # parse arguments
     video_path = args.video
     style_path = args.style_img
     output_path = args.output
@@ -30,7 +30,9 @@ def main():
     fps = args.fps
 
     video_processor = Video(video_path, style_path, img_height, img_width, lr, n_iters, fps)
+    # extracts frames from vid & stylizes the frames
     video_processor.vid_to_frames()
+    # output frames into video
     video_processor.frames_to_vid('./output/', output_path)
 
 if __name__ == "__main__":
