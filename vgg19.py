@@ -40,9 +40,9 @@ class VGG(object):
             out = tf.nn.relu(conv2d + b)
         setattr(self, layer_name, out)
 
+    # uses avg pooling instead of max pooling for better performance as suggested in the paper
     def avgpool(self, prev_layer, layer_name):
         with tf.compat.v1.variable_scope(layer_name):
-            # Avg pooling (replace the original max pooling for better performance stated in the paper)
             out = tf.nn.avg_pool(value=prev_layer,
                                  ksize=[1, 2, 2, 1],
                                  strides=[1, 2, 2, 1],
@@ -50,6 +50,7 @@ class VGG(object):
 
         setattr(self, layer_name, out)
 
+    # loads the VGG-19 neural net architecture
     def load(self):
         self.conv2d_relu(self.input, 0, "block1_conv1")
         self.conv2d_relu(self.block1_conv1, 2, "block1_conv2")
