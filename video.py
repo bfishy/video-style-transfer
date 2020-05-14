@@ -22,6 +22,7 @@ class Video(object):
         result = image_model.train(self.n_iters)
         return result
 
+    # extracts frames from video; stylizes each frame
     def vid_to_frames(self):
         video = cv2.VideoCapture(self.video_path)
         print("Video successfully opened.")
@@ -40,6 +41,7 @@ class Video(object):
             count += 1
         print("All frames are successfully stylized.")
 
+    # funcation that puts frames back into video with selected fps
     def frames_to_vid(self, path_in, path_out):
         frame_array = []
         files = [f for f in os.listdir(path_in) if isfile(join(path_in, f)) if not f.startswith('.')]
