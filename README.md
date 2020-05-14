@@ -6,13 +6,9 @@ Neural style transfer on videos allows us to "re-draw" the original content fram
 Code in this repository is built and modeled on methods provided in [A Neural Algorithm of Artistic Style](https://arxiv.org/pdf/1508.06576.pdf) by Gatys et al. and [Artistic Style Transfer for Videos](https://arxiv.org/pdf/1604.08610.pdf) by Ruder et al.
 
 #### Image Example:
-Content Image + Style:
+Content Image                   Style                              Result
 
-<img src="./image content/castle.jpg" alt="castle image" width="200" height="150"> + <img src="./styles/starry_night.jpg" alt="style input" width="200" height="150">
-
-Result:
-
-<img src="./stylized images/castle_starry_300.png" alt="result" width="200" height="150">
+<img src="./image content/castle.jpg" alt="castle image" width="200" height="150"> <img src="./styles/starry_night.jpg" alt="style input" width="200" height="150"> <img src="./stylized images/castle_starry_300.png" alt="result" width="200" height="150">
 
 #### Video Example:
 Content Video + Style:
