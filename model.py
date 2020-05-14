@@ -96,6 +96,8 @@ class Image(object):
 
         self.style_loss = sum(self.style_layer_w[i] * unweighted_loss[i] for i in range(num_layers))
 
+    ## Optical flow & temporal loss not working; would advise saving as .flo as alternate solution
+
     # def warp_image(self, img, flow):
     #     h, w = flow.shape[:2]
     #     flow = -flow
