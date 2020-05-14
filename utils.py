@@ -39,6 +39,9 @@ def generate_noise_image(content_image, width, height, noise_ratio=0.6):
 
 
 def save_image(path, image):
+    """
+    Saves image to given path
+    """
     image = image[0] # tensor to image
     image = np.clip(image, 0, 255).astype('uint8')
     imageio.imwrite(path, image)
