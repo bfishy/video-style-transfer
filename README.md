@@ -5,8 +5,23 @@ Neural style transfer on videos allows us to "re-draw" the original content fram
 
 Code in this repository is built and modeled on methods provided in [A Neural Algorithm of Artistic Style](https://arxiv.org/pdf/1508.06576.pdf) by Gatys et al. and [Artistic Style Transfer for Videos](https://arxiv.org/pdf/1604.08610.pdf) by Ruder et al.
 
-#### Example:
-![video input](./video_content/chair_gif.gif) + ![style input](./styles/starry_night.jpg)
+#### Video Example:
+Content Image + Style:
+
+<img src="./image content/castle.jpg" alt="castle image" width="400" height="300"> + <img src="./styles/starry_night.jpg" alt="style input" width="400" height="300">
+
+Result:
+
+<img src="./stylized images/castle_starry_300.png" alt="result" width="400" height="300">
+
+#### Video Example:
+Content Video + Style:
+
+<img src="./video content/chair_gif.gif" alt="video input" width="400" height="300"> + <img src="./styles/starry_night.jpg" alt="style input" width="400" height="300">
+
+Result:
+
+<img src="./stylized video/stylized_vid_gif.gif" alt="stylized video" width="400" height="300">
 
 ## Setup 
 - In order for the code to run correctly as designed, a loaded version of TensorFlow 1 is required (version 1.15 or 1.14 preferred).
