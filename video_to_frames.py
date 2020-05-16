@@ -15,7 +15,7 @@ def read_frames(filepath):
     print("%d frames successfully generated." % count)
 
 # def main():
-#     read_frames('test.mp4')
+#     read_frames('video content/sintel.mp4')
 
 # if __name__ == "__main__":
 #     main()
