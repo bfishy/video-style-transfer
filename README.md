@@ -12,7 +12,7 @@ Code in this repository is built and modeled on methods provided in [A Neural Al
 </pre>
 
 #### Video Example:
-<pre>      Content Image                Style                      Result
+<pre>                  Content Image                                   Style                                 Result
 
 <img src="./video content/sintel.gif" alt="video input" width="400" height="225"> <img src="./styles/starry_night.jpg" alt="style input" width="300" height="225">   <img src="./stylized video/sintel_starry_100_20.gif" alt="stylized video" width="300" height="225">
 </pre>
