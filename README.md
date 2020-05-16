@@ -14,7 +14,7 @@ Code in this repository is built and modeled on methods provided in [A Neural Al
 #### Video Example:
 <pre>      Content Image                Style                      Result
 
-<img src="./video content/chair_gif.gif" alt="video input" width="200" height="150"> <img src="./styles/starry_night.jpg" alt="style input" width="200" height="150">   <img src="./stylized video/stylized_vid_gif.gif" alt="stylized video" width="200" height="150">
+<img src="./video content/sintel.gif" alt="video input" width="400" height="225"> <img src="./styles/starry_night.jpg" alt="style input" width="300" height="225">   <img src="./stylized video/sintel_starry_100_20.gif" alt="stylized video" width="300" height="225">
 </pre>
 ## Setup 
 - In order for the code to run correctly as designed, a loaded version of TensorFlow 1 is required (version 1.15 or 1.14 preferred).
